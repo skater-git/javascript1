@@ -12,53 +12,46 @@ var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>krastine3 = ' + ilgiausiakrastine;
 // Pasitikrinu ar tai trikampis
 if (krastine1 + krastine2 <= ilgiausiakrastine) {
-    // console.log('joks');
 // Isvedu atsakyma i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>joks</p>';
+// Jei netinka ankstesnis
 } else if (krastine1 + krastine2 > ilgiausiakrastine) {
-        // console.log('trikampis');
 // Isvedu atsakyma i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>trikampis</p>';
 } 
 // Pasitikrinu koks tai trikampis
-if (krastine1 == krastine2 == ilgiausiakrastine) {
-        // console.log('lygiakrastis');
+if (krastine1 == krastine2 && krastine1 == ilgiausiakrastine && krastine2 == ilgiausiakrastine) {
 // Isvedu atsakyma i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>lygiakrastis</p>';
-} 
-// Pasitikrinu koks tai trikampis
-if (krastine1 == krastine2 || krastine1 == ilgiausiakrastine || krastine2 == ilgiausiakrastine) {
-        // console.log('lygiasonis');
+// Jei netinka ankstesnis
+} else if (krastine1 == krastine2 || krastine1 == ilgiausiakrastine || krastine2 == ilgiausiakrastine) {
 // Isvedu atsakyma i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>lygiasonis</p>';
 } 
-// Pasitikrinu koks tai trikampis
-if (krastine1 != krastine2 && krastine1 != ilgiausiakrastine && krastine2 != ilgiausiakrastine) {
-        // console.log('ivairiakrastis');
+// Pasitikrinu ar tai trikampis, jei taip tai koks
+if (krastine1 != krastine2 && krastine1 != ilgiausiakrastine && krastine2 != ilgiausiakrastine && krastine1 + krastine2 > ilgiausiakrastine) {
 // Isvedu atsakyma i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>ivairiakrastis</p>';
 } 
 // Pasitikrinu koks tai trikampis
  if (Math.pow(ilgiausiakrastine, 2) == (Math.pow(krastine1, 2) + Math.pow(krastine2, 2))) {
-    // console.log('status');
 // Isvedu atsakyma i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>status</p>';
 }
 // Apskaiciuoju trikampio pusperimetri
 var pusperimetris = ((krastine1 + krastine2 + ilgiausiakrastine) / 2);
-// console.log(pusperimetris);
 // Apskaiciuoju trikampio plota neitraukus saknies
 var plotas_neistraukus_saknies = (pusperimetris * (pusperimetris - krastine1) * (pusperimetris - krastine2) * (pusperimetris - ilgiausiakrastine));
-// console.log(plotas_neistraukus_saknies);
 // Apskaiciuoju trikampio plota
 var plotas = Math.sqrt(plotas_neistraukus_saknies);
-// console.log(plotas);
-// Isvedu atsakyma i narsykle
+// Isvedu atsakyma i narsykle jei tai trikampis
 var trikampis = document.querySelector('.trikampis');
+if (krastine1 + krastine2 > ilgiausiakrastine) {
 trikampis.innerHTML += '<p>trikampio plotas:' + ' ' + plotas;
+}
