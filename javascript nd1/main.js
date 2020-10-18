@@ -1,12 +1,12 @@
-var krastine1 = 6;
+var krastine1 = 3;
 // Isvedu krastine i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>krastine1 = ' + krastine1;
-var krastine2 = 6;
+var krastine2 = 4;
 // Isvedu krastine i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>krastine2 = ' + krastine2;
-var ilgiausiakrastine = 7;
+var ilgiausiakrastine = 5;
 // Isvedu krastine i narsykle
 var trikampis = document.querySelector('.trikampis');
 trikampis.innerHTML += '<p>krastine3 = ' + ilgiausiakrastine;
