@@ -1,0 +1,71 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container form {
+  width: 20%;
+  margin: 15px;
+  background-color: lightseagreen;
+}
+
+.container form input {
+  margin: 5px;
+}
+
+.container form label {
+  margin-left: 5px;
+}
+
+.container form #submit {
+  background-color: lightgrey;
+  outline: none;
+}
+
+.container table, .container tr, .container td {
+  border-collapse: collapse;
+  margin: 15px;
+}
+
+.container table thead th, .container tr thead th, .container td thead th {
+  padding: 15px;
+  background-color: lightseagreen;
+}
+
+.container .modalo_fonas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.container .modalo_fonas.modalas-aktyvus {
+  z-index: 1;
+  opacity: 1;
+}
+
+.container .modalo_fonas .vidinis_modalas {
+  max-width: 300px;
+  margin: 60px auto;
+  background-color: #fff;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container .modalo_fonas .vidinis_modalas #trinti {
+  padding: 5px 10px;
+  background-color: red;
+}
+
+.container .modalo_fonas .vidinis_modalas #netrinti {
+  padding: 5px 10px;
+  background-color: green;
+}
+/*# sourceMappingURL=main.css.map */
